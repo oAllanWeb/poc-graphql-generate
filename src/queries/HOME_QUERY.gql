@@ -1,0 +1,12 @@
+query Characters($id: ID!) {
+  episode(id: $id) {
+    name
+    characters {
+      id
+      name
+      status
+      species
+      image
+    }
+  }
+}
